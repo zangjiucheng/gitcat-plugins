@@ -1,0 +1,11 @@
+{
+  "name": "gitcat-plugins",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "Community index of GitCat plugins.",
+  "scripts": {
+    "build-index": "node scripts/build-index.mjs",
+    "check-index": "node scripts/build-index.mjs --check"
+  }
+}

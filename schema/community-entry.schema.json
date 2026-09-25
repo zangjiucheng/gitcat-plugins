@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/zangjiucheng/gitcat-plugins/main/schema/community-entry.schema.json",
+  "title": "GitCat community plugin index entry",
+  "description": "One file under community/<id>.json — a POINTER to a plugin that lives in its own repository, not a copy of its manifest. See CONTRIBUTING.md for how to submit one.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "description", "author", "repo", "manifestPath"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$",
+      "description": "Same charset GitCat itself requires for a plugin id. Must match the `id` inside the plugin's own plugin.json, and must be unique across this whole index (official/ and community/ combined)."
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Human-readable display name, matching the plugin's own manifest `name`."
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200,
+      "description": "One-line summary for the index listing."
+    },
+    "author": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The plugin author's name or GitHub handle — whoever maintains the linked repo, not necessarily whoever opened the submission PR."
+    },
+    "repo": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://github\\.com/[^/]+/[^/]+/?$",
+      "description": "The plugin's own GitHub repository (root URL, no trailing path) — this index never hosts a community plugin's code."
+    },
+    "manifestPath": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Path to plugin.json WITHIN the repo above, e.g. \"plugin.json\" or \"plugins/my-plugin/plugin.json\". No leading slash, no \"..\"."
+    },
+    "homepage": {
+      "type": "string",
+      "format": "uri",
+      "description": "Optional: a docs/homepage URL if different from the repo itself."
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+      "uniqueItems": true,
+      "description": "Optional free-form category tags, e.g. [\"syntax-highlighting\", \"git-hooks\"]."
+    },
+    "minGitcatVersion": {
+      "type": "string",
+      "description": "Optional — mirrors the plugin manifest's own minGitcatVersion, shown in the index listing as a heads-up before someone tries to install it."
+    }
+  }
+}
