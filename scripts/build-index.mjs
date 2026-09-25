@@ -14,10 +14,10 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 
-// TODO: update once the GitHub repo exists — used to build raw-content URLs
-// for OFFICIAL entries (whose plugin.json lives IN this repo). Community
-// entries never need this: their own `repo` field is already a full URL.
-const REPO = "OWNER/gitcat-plugins";
+// Used to build raw-content URLs for OFFICIAL entries (whose plugin.json
+// lives IN this repo). Community entries never need this: their own `repo`
+// field is already a full URL.
+const REPO = "zangjiucheng/gitcat-plugins";
 const DEFAULT_BRANCH = "main";
 
 const CHECK_ONLY = process.argv.includes("--check");
