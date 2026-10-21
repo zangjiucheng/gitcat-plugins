@@ -38,10 +38,14 @@ own existing entry is exactly as welcome as a new one.
 
 ## Proposing an "official" plugin
 
-`official/` is for plugins maintained **in this repo** — small, broadly
-useful references (the kind that ship as examples). If that's what you're
-proposing rather than linking your own repo, open an issue first and say
-what it does; official entries are curated, not a first-come queue.
+`official/` is for plugins published by the GitCat project: small, broadly
+useful references. Most of them are **synced from GitCat's own
+`examples/plugins/`** (see [Official plugins](./README.md#official-plugins)).
+Those folders are generated, so a fix to one belongs in the
+[GitCat repo](https://github.com/zangjiucheng/GitCat), not in a PR here. If you're
+proposing a new official plugin rather than linking your own repo, open an
+issue first and say what it does. Official entries are curated, not a
+first-come queue.
 
 ## What gets rejected
 
