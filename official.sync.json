@@ -9,6 +9,7 @@
   "plugins": {
     "commit-subject-lint": {},
     "language-pack": {},
-    "open-in-editor": {}
+    "open-in-editor": {},
+    "staged-review": {}
   }
 }
