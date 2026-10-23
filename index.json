@@ -1,18 +1,51 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-25T18:40:29.366Z",
-  "count": 1,
+  "generatedAt": "2026-10-23T18:33:03.444Z",
+  "count": 4,
   "plugins": [
+    {
+      "kind": "official",
+      "id": "commit-subject-lint",
+      "name": "Commit Subject Lint",
+      "description": "A commit-created hook (plus an on-demand command) that checks the new commit's subject line and reacts through Tama. Written as a cross-platform Luau handler.",
+      "author": "GitCat",
+      "minGitcatVersion": "1.5.1",
+      "tags": [],
+      "manifestUrl": "https://raw.githubusercontent.com/zangjiucheng/gitcat-plugins/main/official/commit-subject-lint/plugin.json",
+      "repoPath": "official/commit-subject-lint"
+    },
     {
       "kind": "official",
       "id": "language-pack",
       "name": "Language Pack",
       "description": "Adds keyword-aware diff syntax highlighting for Python, Rust, Go, Java, C, C++ and Shell — languages GitCat's built-in highlighter otherwise treats as plain (generic) text.",
       "author": "GitCat",
-      "minGitcatVersion": null,
+      "minGitcatVersion": "1.5.1",
       "tags": [],
       "manifestUrl": "https://raw.githubusercontent.com/zangjiucheng/gitcat-plugins/main/official/language-pack/plugin.json",
       "repoPath": "official/language-pack"
+    },
+    {
+      "kind": "official",
+      "id": "open-in-editor",
+      "name": "Open in Editor",
+      "description": "External-tool commands that use placeholders: open the current repository in VS Code, or show a stat summary of the selected commit.",
+      "author": "GitCat",
+      "minGitcatVersion": "1.5.1",
+      "tags": [],
+      "manifestUrl": "https://raw.githubusercontent.com/zangjiucheng/gitcat-plugins/main/official/open-in-editor/plugin.json",
+      "repoPath": "official/open-in-editor"
+    },
+    {
+      "kind": "official",
+      "id": "staged-review",
+      "name": "Staged Review",
+      "description": "A pre-commit review panel for what you have staged: a summary, a whitespace check, and a TODO/FIXME scan over the staged files — plus a voice-and-copy Tama skin for the reviewer.",
+      "author": "GitCat",
+      "minGitcatVersion": "1.5.1",
+      "tags": [],
+      "manifestUrl": "https://raw.githubusercontent.com/zangjiucheng/gitcat-plugins/main/official/staged-review/plugin.json",
+      "repoPath": "official/staged-review"
     }
   ]
 }
