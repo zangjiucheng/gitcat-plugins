@@ -35,17 +35,17 @@ commands and does nothing when invoked; it exists purely to declare
 
 - **Extension collisions**: if more than one enabled plugin declares the same
   file extension, the plugin that was installed/enabled MOST RECENTLY wins
-  for that extension — see [GitCat's plugin docs](https://zangjiucheng.github.io/GitCat/plugins#languages).
+  for that extension — see [`docs/plugins.md`](https://zangjiucheng.github.io/GitCat/plugins#languages).
 
 ## Install
 
-Settings → **Plugins** → **Install plugin…** and pick this folder's
-`plugin.json` (or the folder itself). Open any commit that touches one of the
+**Tools ▸ Plugins…** → **Install from file…** and pick this folder's
+`plugin.json`. Open any commit that touches one of the
 covered file types and its diff now shows keyword highlighting.
 
 ## Extending it
 
 Copy this manifest and add your own language, or add extensions/keywords to
 an existing entry — it's just JSON, no code involved. See
-[GitCat's plugin docs](https://zangjiucheng.github.io/GitCat/plugins#languages)
-for the full field reference.
+[`docs/plugins.md`](https://zangjiucheng.github.io/GitCat/plugins#languages) for the full field
+reference.

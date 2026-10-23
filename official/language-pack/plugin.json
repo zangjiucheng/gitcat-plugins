@@ -2,6 +2,7 @@
   "id": "language-pack",
   "name": "Language Pack",
   "version": "1.0.0",
+  "minGitcatVersion": "1.5.1",
   "description": "Adds keyword-aware diff syntax highlighting for Python, Rust, Go, Java, C, C++ and Shell — languages GitCat's built-in highlighter otherwise treats as plain (generic) text.",
   "languages": [
     {

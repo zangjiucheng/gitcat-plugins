@@ -5,7 +5,7 @@
     "path": "examples/plugins",
     "docsSite": "https://zangjiucheng.github.io/GitCat"
   },
-  "lastSyncedRef": null,
+  "lastSyncedRef": "v1.5.1",
   "plugins": {
     "commit-subject-lint": {},
     "language-pack": {},
